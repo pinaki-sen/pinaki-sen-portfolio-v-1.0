@@ -1,0 +1,64 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  background: #808080;
+}
+
+/*.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}*/
+
+.carousel-inner {
+  position: relative;
+  /* Removed height here */
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  display: none;
+  width: 100%;
+}
+
+
+.col-exp {
+  flex: 75%;
+  padding: 20px;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 990px) {
+  .col-exp {
+    flex: 100%;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: col-exp;
+  }
+}
+.col-car {
+  flex: 25%;
+  padding: 20px;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 990px) {
+  .col-car {
+    flex: 100%;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: col-car;
+  }
+}
